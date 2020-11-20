@@ -28,3 +28,8 @@ div {
 .js__methods:hover {
   opacity: 1;
 }
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+}
