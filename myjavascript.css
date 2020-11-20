@@ -1,0 +1,30 @@
+p,
+div {
+  font-family: 'Inconsolata', monospace;
+}
+.mainMethod {
+  box-shadow: inset 2px 2px 9px 0px grey, inset -5px -8px 8px 0px white;
+  border-radius: 0.5rem;
+  border: 1px #02ffee solid;
+}
+.copyButtonParent {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+.method__title {
+  font-size: 1.5rem;
+}
+.js__methods {
+  box-shadow: inset 2px 2px 9px 0px grey, inset -5px -8px 8px 0px white;
+  border-radius: 0.5rem;
+  border: 1px #02ffee solid;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  opacity: 0.5;
+}
+.js__methods:hover {
+  opacity: 1;
+}

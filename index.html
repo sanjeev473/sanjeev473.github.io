@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Js Method | JS Method | JavaScript Method | length | string | js array | indexof | spice | slice</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JavaScript Method , JavaScript string , JavaScript Array">
+  <meta name="keywords" content="JavaScript, Method, Array, String">
+  <meta name="author" content="John Doe">
+  <link rel="icon" href="js-method-transparent-logo-second.png" type="image/gif" sizes="50x50">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="prism/prism.css">
+  <link rel="stylesheet" href="myjavascript.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="prism/prism.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      new ClipboardJS('.copybtn');
+    })
+  </script>
+  <script src="myjavascript.js"></script>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#"><img src="js-method-transparent-logo-second.png" height="80" width="150"
+        alt=""></a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">JavaScript</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1>JavaScript | Method | Array | String</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container bg-light" style="border: 5px ridge orange;">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-sm-4">
+        <div class="js__methods">
+          <h1 class="js__method__name text-center">
+            .length
+          </h1>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="js__methods">
+          <h1 class="js__method__name text-center">
+            indexOf()
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container bg-light" id="length" style="border: 5px ridge orange;">
+    <div class="row align-items-center justify-content-center" style="height: 100vh;">
+      <div class="col-sm-12">
+        <div class="method__title"><strong><u><i>String Method</i></u></strong></div>
+      </div>
+      <div class="col-11 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+        <h1 class="text-success text-center mainMethod p-1">
+          string.length<br>
+          array.length
+        </h1>
+      </div>
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-6">
+            <div><strong>You can find length of the <mark>Array</mark></strong></div>
+            <pre id="foo"><code class="language-js">
+let a = [1,2,3,4,5,6,7,8,9,10];
+console.log(a.length);
+// Output: 10
+              </code>
+            </pre>
+            <div class="copyButtonParent">
+              <button class="copybtn btn btn-sm border border-white bg-white" data-clipboard-target="#foo">
+                <img src="clippy.svg" alt="Copy to clipboard" width="20" height="20">
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div><strong>You can find length of the <mark>String</mark></strong></div>
+            <pre id="foo1"><code class="language-js">
+let str = "Hello World";
+console.log(str.length);
+// Output: 11
+              </code>
+            </pre>
+            <div class="copyButtonParent">
+              <button class="copybtn btn btn-sm border border-white bg-white" data-clipboard-target="#foo1">
+                <img src="clippy.svg" alt="Copy to clipboard" width="20" height="20">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="pt-2 bg-warning w-25">
+  <div class="container bg-light" id="indexOf" style="border: 5px ridge orange;">
+    <div class="row align-items-center justify-content-center" style="height: 100vh;">
+      <div class="col-sm-12">
+        <div class="method__title"><strong><u><i>String Method</i></u></strong></div>
+        <div>Finding a String in a String</div>
+      </div>
+      <div class="col-11 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+        <h1 class="text-success text-center mainMethod p-1">
+          string.indexOf();<br>
+          string.indexOf("text_string");
+        </h1>
+      </div>
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-6">
+            <div><strong>It will return index of that <mark>String</mark></strong></div>
+            <pre id="foo11"><code class="language-js">
+let a = "Hello I am sanjeev kumar gupta";
+console.log(a.indexOf('Sanjeev'));
+// Output: -1
+              </code>
+            </pre>
+            <div class="copyButtonParent">
+              <button class="copybtn btn btn-sm border border-white bg-white" data-clipboard-target="#foo11">
+                <img src="clippy.svg" alt="Copy to clipboard" width="20" height="20">
+              </button>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div><strong>It will return index of that <mark>String</mark></strong></div>
+            <pre id="foo12"><code class="language-js">
+let a = "Hello I am sanjeev kumar gupta";
+console.log(a.indexOf('sanjeev'));
+// Output: 11
+              </code>
+            </pre>
+            <div class="copyButtonParent">
+              <button class="copybtn btn btn-sm border border-white bg-white" data-clipboard-target="#foo12">
+                <img src="clippy.svg" alt="Copy to clipboard" width="20" height="20">
+              </button>
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-6">
+            <div><strong>It will return index of that <mark>String</mark></strong></div>
+            <pre id="foo13"><code class="language-js">
+let a = "Hello I am sanjeev kumar gupta";
+console.log(a.indexOf('sanjeev',15));
+// Output: -1
+              </code>
+            </pre>
+            <div class="copyButtonParent">
+              <button class="copybtn btn btn-sm border border-white bg-white" data-clipboard-target="#foo13">
+                <img src="clippy.svg" alt="Copy to clipboard" width="20" height="20">
+              </button>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div><strong>It will return index of that <mark>String</mark></strong></div>
+            <pre id="foo14"><code class="language-js">
+let a = "Hello I am sanjeev kumar gupta sanjeev";
+console.log(a.indexOf('sanjeev',15));
+// Output: 31
+              </code>
+            </pre>
+            <div class="copyButtonParent">
+              <button class="copybtn btn btn-sm border border-white bg-white" data-clipboard-target="#foo14">
+                <img src="clippy.svg" alt="Copy to clipboard" width="20" height="20">
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <code><b>Note -</b></code> It will always search from left to right
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
