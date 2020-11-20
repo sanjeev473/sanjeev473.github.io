@@ -25,11 +25,19 @@ div {
   margin: 0.5rem;
   opacity: 0.5;
 }
+.js__method__logo {
+  width: 150px;
+  height: 80px;
+}
 .js__methods:hover {
   opacity: 1;
 }
 @media screen and (max-width: 576px) {
   h1 {
     font-size: 1.3rem;
+  }
+  .js__method__logo {
+    width: 100px;
+    height: 40px;
   }
 }
