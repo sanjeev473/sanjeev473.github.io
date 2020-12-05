@@ -251,8 +251,8 @@ console.log(a.indexOf('sanjeev',15));
           <div class="col-sm-6">
             <div><strong>It will return index of that <mark>String</mark></strong></div>
             <pre id="lastIndexOfid"><code class="language-js">
-let a = "Hello I am sanjeev kumar gupta";
-console.log(a.indexOf('Sanjeev'));
+let a = "Hello I am sanjeev kumar gupta sanjeev how are you";
+console.log(a.lastIndexOf('Sanjeev'));
 // Output: -1
               </code>
             </pre>
@@ -266,9 +266,9 @@ console.log(a.indexOf('Sanjeev'));
           <div class="col-sm-6">
             <div><strong>It will return index of that <mark>String</mark></strong></div>
             <pre id="lastIndexOfid2"><code class="language-js">
-let a = "Hello I am sanjeev kumar gupta";
+let a = "Hello I am sanjeev kumar gupta sanjeev how are you";
 console.log(a.indexOf('sanjeev'));
-// Output: 11
+// Output: 31
               </code>
             </pre>
             <div class="copyButtonParent">
@@ -283,9 +283,9 @@ console.log(a.indexOf('sanjeev'));
           <div class="col-sm-6">
             <div><strong>It will return index of that <mark>String</mark></strong></div>
             <pre id="lastIndexOfid3"><code class="language-js">
-let a = "Hello I am sanjeev kumar gupta";
-console.log(a.indexOf('sanjeev',15));
-// Output: -1
+let a = "Hello I am sanjeev kumar gupta sanjeev how are you";
+console.log(a.lastIndexOf('sanjeev',15));
+// Output: 11
               </code>
             </pre>
             <div class="copyButtonParent">
@@ -298,9 +298,13 @@ console.log(a.indexOf('sanjeev',15));
           <div class="col-sm-6">
             <div><strong>It will return index of that <mark>String</mark></strong></div>
             <pre id="lastIndexOfid4"><code class="language-js">
-let a = "Hello I am sanjeev kumar gupta sanjeev";
-console.log(a.indexOf('sanjeev',15));
-// Output: 31
+let a = "Hello I am sanjeev kumar gupta sanjeev how are you";
+         """""""""""""""""
+                         ^
+                         15
+        <-----------------(Search start from end to the begining of the string)
+console.log(a.lastIndexOf('sanjeev',15));
+// Output: 11
               </code>
             </pre>
             <div class="copyButtonParent">
@@ -313,16 +317,6 @@ console.log(a.indexOf('sanjeev',15));
             <code><b>Note -</b></code> It will always search from left to right
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-
-  <hr class="pt-2 bg-warning w-25">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-sm-12">
-
       </div>
     </div>
   </div>
